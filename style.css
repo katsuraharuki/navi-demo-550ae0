@@ -1,0 +1,36 @@
+:root{--navy:#1f2f4f;--gold:#b08d2e;--gold-l:#e9d9a6;--line:#d5dae4;--bg:#fff;--soft:#f6f8fb}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--navy);font-family:"Hiragino Sans","Yu Gothic","Meiryo",sans-serif;line-height:1.7}
+h1,h2,.eyebrow,.card-text,.step{font-family:"Yu Mincho","Hiragino Mincho ProN","MS PMincho",serif}
+.sr{position:absolute;left:-9999px}
+.top{padding:16px 16px 10px;border-bottom:3px solid var(--gold)}
+.eyebrow{margin:0;font-size:12px;letter-spacing:.2em;color:var(--gold)}
+h1{margin:0;font-size:22px;font-weight:700}
+.search{padding:12px 16px 0}
+.search input{width:100%;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:6px;color:var(--navy);background:#fff}
+.q-msg{margin:4px 0 0;min-height:1.4em;font-size:13px;color:var(--gold)}
+main{padding:8px 16px 16px;max-width:560px;margin:0 auto}
+.q{font-size:22px;margin:12px 0}
+.starts{display:flex;flex-direction:column;gap:10px}
+.start-btn{font:inherit;font-size:17px;text-align:left;padding:16px;border:1px solid var(--navy);background:#fff;color:var(--navy);border-radius:6px;cursor:pointer}
+.start-btn:active{background:var(--navy);color:#fff}
+.hint{font-size:13px;color:#51607d;margin:10px 0}
+.opts{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:6px 0}
+.opts-label{font-size:12px;color:#51607d;margin-right:2px}
+.seg,.fl{font:inherit;font-size:14px;padding:8px 12px;border:1px solid var(--navy);background:#fff;color:var(--navy);border-radius:6px;cursor:pointer}
+.seg.on,.fl.on{background:var(--navy);color:#fff}
+.from{font-size:13px;margin:4px 0 8px}
+.link{font:inherit;font-size:13px;background:none;border:0;color:var(--gold);text-decoration:underline;padding:0;cursor:pointer}
+.card{border:2px solid var(--navy);border-radius:8px;padding:14px 14px 12px;background:#fff;margin:6px 0 12px;box-shadow:0 3px 0 var(--gold)}
+.step{font-size:13px;color:var(--gold);font-weight:700}
+.card-text{font-size:22px;font-weight:700;line-height:1.55;margin:6px 0 12px;min-height:3.1em}
+.nav{display:flex;gap:10px}
+.btn{flex:1;font:inherit;font-size:17px;padding:13px;border:1px solid var(--navy);background:#fff;color:var(--navy);border-radius:6px;cursor:pointer}
+.btn.primary{background:var(--navy);color:#fff}
+.btn:disabled{opacity:.35;cursor:default}
+.floors{display:flex;gap:6px;margin-bottom:6px}
+.map{border:1px solid var(--line);border-radius:6px;background:var(--soft);overflow:hidden}
+.map svg{display:block;width:100%;height:auto}
+.foot{padding:8px 16px 24px;text-align:center}
+.foot p{margin:0;font-size:11px;color:#6a7791}
