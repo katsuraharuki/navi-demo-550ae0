@@ -2,28 +2,33 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>館内ナビ　館の方へのご説明（見本）</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap">
 <link rel="stylesheet" href="style.css">
 <style>
 main.staff{max-width:720px}
-.staff h2{font-size:19px;margin:28px 0 6px;padding-bottom:4px;border-bottom:1px solid var(--gold)}
+.staff h2{font-family:var(--round)}
+.staff a{color:var(--green-d)}
+.staff h2{font-size:19px;margin:28px 0 6px;padding-bottom:4px;border-bottom:2px solid var(--green)}
 .staff p,.staff li{font-size:15px}
 .staff table{border-collapse:collapse;width:100%;font-size:13px}
 .staff th,.staff td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 .staff th{background:var(--soft)}
-.tag{display:inline-block;font-size:12px;border:1px solid var(--gold);color:var(--gold);padding:0 6px;border-radius:3px}
+
 </style>
 </head>
 <body>
 <header class="top">
-  <p class="eyebrow">館の方へのご説明</p>
-  <h1>館内ナビ（見本）でできること</h1>
+  <div class="top-in">
+    <p class="place">おのだサンパーク　館の方へのご説明</p>
+    <h1>館内ナビ（見本）でできること</h1>
+  </div>
 </header>
 <main class="staff">
   <p>「◯◯はどこですか？」というお問い合わせに、お客様がご自分のスマートフォンで答えを見られるようにする仕組みです。案内所やテナントの店頭でお答えする回数を減らすことが、いちばんの目的です。</p>
-  <p><a href="index.html?from=f1_main">見本を開く（1F 正面入口から）</a></p>
+  <p><a href="index.html?from=f1_main">見本を開く（1F 正面入口のQRシールから開いた状態）</a></p>
 
   <h2>1. 仕組み</h2>
   <ul>
@@ -31,7 +36,9 @@ main.staff{max-width:720px}
     <li>道順は、確認根拠のある通路データの中から、図の上の距離と昇降機の重みで道を計算します。実際の最短距離・最短時間を保証するものではありません。「車いす・ベビーカー」を選ぶと、エスカレーター・階段を使わずエレベーターを通る道で計算し直します。</li>
     <li>案内の文章も計算で組みます。曲がる向きは線の角度から、目印は道沿いの店名から作ります。固定の文章を店ごとに書かないので、お店が増えても書き直しは要りません。</li>
     <li>地図は自前で描いた図です。公式サイトのフロアマップ画像は貼っていません。</li>
-    <li>見本の行き先は、2階の DAISO・Standard Products の1店だけです。ほかのお店の名前で検索すると「ご契約後に表示します」と出ます。</li>
+    <li>本館1F・2Fの全店（約110店）とトイレ・インフォメーションを、店名・ひらがな・英字・よくある呼び方（「スタバ」「マック」「100均」など）で探せます。「ごはん・カフェ」「スマホ」「ATM」など種類からも探せます。</li>
+    <li>店の区画・通路・店舗前の位置は、公式フロアマップの色から機械で起こした目安です。東館の店は検索に出ますが、本館からの道順は現地確認後に表示します。</li>
+    <li>色は、サンパークのロゴの緑を操作と現在地に、山陽小野田市のイメージカラー（夕陽のオレンジ）を道順と行き先だけに使っています。ロゴマークは使っていません。</li>
   </ul>
 
   <h2>2. QRシール</h2>
@@ -40,6 +47,9 @@ main.staff{max-width:720px}
     <tr><th>見本の出発点</th><th>点のID</th><th>QRの読み取り先</th></tr>
     <tr><td>1F 正面入口</td><td>f1_main</td><td>index.html?from=f1_main</td></tr>
     <tr><td>1F 専門店食品街側の入口</td><td>f1_east</td><td>index.html?from=f1_east</td></tr>
+    <tr><td>1F スターバックス側の入口</td><td>f1_west</td><td>index.html?from=f1_west</td></tr>
+    <tr><td>1F ロフト側の入口</td><td>f1_nw</td><td>index.html?from=f1_nw</td></tr>
+    <tr><td>1F 銀行ATM側の入口</td><td>f1_ne</td><td>index.html?from=f1_ne</td></tr>
     <tr><td>2F 正面入口</td><td>f2_main</td><td>index.html?from=f2_main</td></tr>
   </table>
   <p>場所を足すときは、通路と段差を現地で確認し、点と歩ける線を登録してからQRシールを貼ります。電波による現在地の自動測位は、見本には入れていません（屋内は誤差が大きく、階の判別も難しいため）。</p>
@@ -48,10 +58,10 @@ main.staff{max-width:720px}
   <p>公式フロア図から起こした見本です。通路・扉・段差を現地で確認していないため、実際に使えるバリアフリー経路は保証しません。</p>
   <table><tr><th>項目</th><th>見本での扱い／確認すること</th></tr>
   <tr><td>東側の昇降機</td><td>図の記号の並びから対応を推定したエスカレーターとエレベーターを使用。乗降口と運行方向は現地確認が必要です。</td></tr>
-  <tr><td>階段・中央と西の昇降機</td><td>階段は階段として表示。中央・西の上下対応や、北側EVへ至る通路が未確定のため、見本の階間経路には使いません。</td></tr>
+  <tr><td>中央・西・北の昇降機</td><td>1Fと2Fで同じ位置にある記号どうしを、上下でつながる昇降機とみなして使っています（確度は中〜低）。上下の対応と乗降口は現地確認が必要です。</td></tr>
   <tr><td>2F昇降機の島</td><td>内部を通らない前提で、南側を回ります。吹抜かどうかと、実際の通行可能範囲は未確認です。</td></tr>
-  <tr><td>DAISOの入口</td><td>公式図に入口の印がありません。案内は通路上の「店舗前（目安）」までです。入口への到達は保証しません。</td></tr>
-  <tr><td>入口・1F通路</td><td>フランソワを避ける経路と食品街側の入口は図からの推定です。扉・通行規制を確認します。</td></tr>
+  <tr><td>各店の入口</td><td>公式図に入口の印がありません。案内は、店の区画に面した広めの通路の「店舗前（目安）」までです。入口の位置は現地で確認して直します。</td></tr>
+  <tr><td>入口・通路</td><td>通路は図の白い所を歩ける所とみなしています。館の入口6か所と、通路の通行規制・扉は現地確認が必要です。</td></tr>
   <tr><td>車いす・ベビーカー</td><td>階段・エスカレーターを除く計算です。段差・幅・スロープ・扉・EVの利用条件はすべて現地確認が必要です。</td></tr>
   </table>
 
@@ -60,7 +70,7 @@ main.staff{max-width:720px}
     <li>駐車場からの案内（出発点に駐車場の入口を足す）</li>
     <li>多言語（案内文は計算で組んでいるため、言語ごとに言い回しの部品を足す形で広げられます）</li>
     <li>よくあるご質問（トイレ・授乳室・休憩場所など、行き先の種類を足す）</li>
-    <li>行き先のお店の追加（店ごとに点と箱を足す。名前を出すのは契約したお店だけ）</li>
+    <li>店の入れ替え（店の一覧を1行直すだけで、検索と道順に反映）</li>
   </ul>
 
   <h2>5. 別に確かめること</h2>
